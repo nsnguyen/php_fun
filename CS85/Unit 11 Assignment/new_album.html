@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content = "text/html; charset=UTF-8"/>
+		<title>Add Album</title>
+	</head>
+	
+	<body>
+		<h1>Add a new Album
+			</h1>
+			
+			<form action = "insert_album.php" method = "post">
+				<table border = "0">
+					<tr>
+						<td>Album Name:</td>
+			            <td><input type="text" name="albumName" maxlength="30" size="30"></td>
+      </tr>
+      <tr>
+        <td>Album Type:</td>
+         <td><input type="text" name="type" maxlength="13" size="13"></td>
+      </tr>
+      <tr>
+        <td>Artist ID:</td>
+         <td><input type="text" name="artistID" maxlength="13" size="13"></td>
+      </tr>
+    </table>
+
+	<input type="submit" value="Add">
+  </form>
+
+	</body>
+	
+</html>

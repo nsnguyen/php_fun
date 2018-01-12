@@ -1,0 +1,24 @@
+fieldset {
+	width: 30em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+label {
+	float: left;
+	width: 10em;
+	clear: left;
+	text-align: right;
+	margin-right: 1em;
+}
+
+input, select {
+	float: left;
+}
+
+button {
+	float:left;
+	clear: both;
+	margin-left: 10em;
+	margin-top: 1em;
+}

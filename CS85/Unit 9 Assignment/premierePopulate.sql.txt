@@ -1,0 +1,24 @@
+INSERT INTO salesRep 
+VALUES (1, "Lee", "Anna", "123 Fake street", 200, .10);
+INSERT INTO salesRep 
+VALUES (2, "Joe", "John", "456 morefake street", 500, .08);
+
+INSERT INTO customer
+VALUES (1, "Hughe Dan", "abc street", 900, 5000, 2);
+INSERT INTO customer 
+VALUES (2, "Jackson John", "semame street", 2300, 10000, 1);
+
+INSERT INTO inventory
+VALUES (231, "Hammer", 2, "HW", 42, 432);
+INSERT INTO inventory 
+VALUES (392, "Flower", 10, "GA", 11, 98);
+
+INSERT INTO orderList 
+VALUES (82, "Mothers day order", '2013-05-12', 2);
+INSERT INTO orderList 
+VALUES (83, "construction order", '2013-05-13', 1);
+
+INSERT INTO quote 
+VALUES (82, 392, 4, 100);
+INSERT INTO quote 
+VALUES (83, 231, 2, 450);

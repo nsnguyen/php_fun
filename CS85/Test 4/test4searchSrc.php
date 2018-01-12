@@ -1,0 +1,1 @@
+<?php highlight_file('test4search.php'); ?>

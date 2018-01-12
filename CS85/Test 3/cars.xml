@@ -1,0 +1,19 @@
+<cars>
+	<car1 	driver = "Jeannie"
+			color = "absolute red"
+			year = "2007"
+			make = "Toyota"
+			model = "Solara" />
+			
+	<car2 	driver = "Bill"
+			color = "burnt orange"
+			year = "1966"
+			make = "Chevrolet"
+			model = "Corvette" />
+			
+	<car3 	driver = "Ken"
+			color = "pearl essence green"
+			year = "1966"
+			make = "Jaguar"
+			model = "XKE" />
+</cars>

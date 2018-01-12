@@ -1,0 +1,1 @@
+<?php highlight_file('insert_album.php'); ?>

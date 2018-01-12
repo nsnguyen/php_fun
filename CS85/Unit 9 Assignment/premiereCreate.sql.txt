@@ -1,0 +1,40 @@
+CREATE TABLE salesRep(
+	repNum INT PRIMARY KEY,
+	repLastName VARCHAR(15),
+	repFirstName VARCHAR(15),
+	repAddress VARCHAR(25),
+	totalComm INT,
+	commRate FLOAT
+);
+
+CREATE TABLE customer(
+	customerNum INT PRIMARY KEY,
+	customerName VARCHAR(15),
+	customerAddress VARCHAR(25),
+	currentBal INT,
+	creditLim INT,
+	repNum INT
+);
+
+CREATE TABLE inventory(
+	partNum INT PRIMARY KEY,
+	partDesc VARCHAR(40),
+	partQuant INT,
+	partClass CHAR(2),
+	partWarehouseLoc INT,
+	partPrice FLOAT
+);
+
+CREATE TABLE orderList(
+	orderNum INT PRIMARY KEY,
+	orderDesc VARCHAR(40),
+	orderDate DATE,
+	customerNum INT
+);
+
+CREATE TABLE quote(
+	orderNum INT PRIMARY KEY,
+	partNum INT,
+	quotedQuant INT,
+	quotedPrice INT
+);

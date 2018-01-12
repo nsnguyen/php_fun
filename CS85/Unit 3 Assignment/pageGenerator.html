@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	
+<head>
+	<title>Page Generator</title>
+
+</head>
+
+<body>
+	<h1 align ="center"> Create a Website</h1>
+	
+<form method = "post" action = "generatePage.php">
+	
+	<table width = "500" height = "300" border = "1" align = "center">
+		<tr>
+			<td width = "150">
+				<div align = "right">
+					<strong>
+						<label>Caption:</label>
+					</strong>
+					</div>
+				<td width = "300">
+					<input type = "text" name = "Caption" size = "50">
+					</td>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div align = "right">
+				<strong>
+					<label>Background color:</label>
+				</strong>
+				</div>
+			</td>
+			<td>
+				<input type = "text" name = "BackgroundColor">
+				HTML color or #rrggbb
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div align = "right"><strong>Text color:</strong>
+				</div>
+			</td>
+			<td>
+				<input type = "text" name = "TextColor">
+				HTML color or #rrggbb
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div align = "right">
+					<strong>
+						<label>Content:</label>
+					</strong>
+				</div>
+			</td>
+			<td><textarea name = "Content" rows = "7"></textarea> </td>
+		</tr>
+		<tr>
+			<td colspan ="6">
+				<div align ="center">
+					<input type = "submit" name = "submit" value = "Create Page">
+				</div>
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

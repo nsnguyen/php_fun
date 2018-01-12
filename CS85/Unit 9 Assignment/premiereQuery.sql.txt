@@ -1,0 +1,35 @@
+1. retrieve data from a table
+	select * from inventory;
+		This statement displays data from the inventory table
+
+2.	projection - retrieve a subset of the fields of a table
+	select repNum, repLastName from salesrep;
+		This statement displays data only in the field repNum and repLastName from the salesrep table
+	
+3.selection - i.e., filter the data with a WHERE clause
+	select repNum, repLastName from salesrep
+	where repNum like '%1';
+		This statement displays the same result as 2) but only the records from repNum 1
+	
+4. update data in a table
+	update inventory
+	set partDesc = 'Thor's Hammer'
+	where partDesc = 'Hammer'; 
+		This statement changes the description of records that say Hammer to Thor's Hammer
+
+5. delete rows from a table
+	delete from orderList
+	where orderNum = 82;
+		Delete order number 82 from the orderList table
+
+6. sort (order) the result set of a query
+	select * from salesrep order by repLastName;
+		This statement lists the salesrep table in order of laster name
+
+7. delete a table
+	drop table quote;
+		This statement deletes the quote table
+	
+8. delete the database 
+	drop database homework;
+		This statement deletes the database that contains the tables I was working with 

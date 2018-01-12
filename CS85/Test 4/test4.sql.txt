@@ -1,0 +1,49 @@
+use classes;
+
+DROP TABLE instructors;
+DROP TABLE classes;
+
+CREATE TABLE instructors
+(	instructor_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name varchar(30),
+	phone int,
+	office varchar(30)
+);
+
+CREATE TABLE classes
+(	section int NOT NULL PRIMARY KEY,
+	course_number varchar(30),
+	title varchar(30),
+	instructor_id int,
+	FOREIGN KEY (instructor_id) REFERENCES instructors(instructor_id)
+);
+
+INSERT INTO instructors 
+VALUES (1, "Dehkhoda", 4629, "B220E");
+INSERT INTO instructors 
+VALUES (2, "Rogler", 8472, "B220J");
+INSERT INTO instructors 
+VALUES (3, "Geddes", 4628, "B220T");
+
+INSERT INTO classes
+VALUES (1441, "CS80", "Internet Programming", 3);
+INSERT INTO classes
+VALUES (4118, "CS55", "Java Programming", 1);
+INSERT INTO classes
+VALUES (4119, "CS60", "Database Concepts", 2);
+INSERT INTO classes
+VALUES (4128, "CS85", "PHP Programming", 3);
+
+SELECT * FROM instructors;
+SELECT * FROM classes;
+
+Select name, title
+From classes
+INNER JOIN instructors
+ON classes.instructor_id=instructors.instructor_id
+WHERE title LIKE '%programming'
+ORDER BY instructors.name, classes.title;
+
+
+
+

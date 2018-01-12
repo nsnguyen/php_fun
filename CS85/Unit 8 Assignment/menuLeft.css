@@ -1,0 +1,35 @@
+<!--
+     this style places a menu on the left and an item section in
+     the center.  Intended for use with CMS demos for
+     PHP/MySql for the Abs. Beg, Andy Harris
+-->
+
+<style type = "text/css">
+
+body {
+  background-image: url("background.jpg")
+}
+
+h1 {
+  color: #0000FF;
+  font-family: "Comic Sans MS";
+  text-align: center
+}
+
+span.menuPanel {
+  position: absolute;
+  right: 1%;
+  width: 15%;
+  background-color: yellow
+}
+
+span.item {
+  position: absolute;
+  left: 3%;
+  width: 40%;
+  background-color: orange
+}
+
+
+</style>
+

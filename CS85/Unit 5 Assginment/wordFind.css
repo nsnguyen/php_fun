@@ -1,0 +1,39 @@
+/* wordFind.css */
+fieldset {
+  text-align: center;
+}
+
+label{
+  float: left;
+  clear: left;
+  width: 8em;
+}
+
+input, textarea {
+  float: left;
+}
+
+p, button {
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  width: 15px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#keyForm {
+  position: absolute;
+  top: 1000px;
+}

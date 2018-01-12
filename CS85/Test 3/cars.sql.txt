@@ -1,0 +1,19 @@
+CREATE TABLE cars(
+	carNum INT PRIMARY KEY,
+	driver VARCHAR(15),
+	rolor VARCHAR(20),
+	year Int,
+	make VARCHAR(20),
+	model VARCHAR(20)
+);
+
+INSERT INTO cars 
+VALUES (1, "Jeannie", "absolute red", 2007, "Toyota", "Solara");
+INSERT INTO cars 
+VALUES (2, "Bill", "burnt orange", 1966, "Chevrolet", "Corvette");
+INSERT INTO cars 
+VALUES (3, "Ken", "pearl essence green", 1966, "Jaguar", "XKE");
+
+select * from cars order by driver asc ;
+
+
