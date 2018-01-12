@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Border Maker</title>
+		<style type = "text/css">
+			h1,h2,h3 {
+				text-align:center;
+			}
+			textarea, button {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: auto;
+			}
+			
+			table {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<h1>Border Maker</h1>
+		<h3>Demonstrates how to read HTML form elements</h3>
+		
+		<form method = "post"
+			  action = "borderMaker.php">
+		
+		<div id = "input">
+			<h3>Text to modify</h3>
+			<textarea name = "basicText"
+					  row = "10"
+					  cols = "40">
+		Four score and seven years ago our fathers brought fourth on this
+		continent a new nation, conceived in liberty and deciated to the
+		proposition that all men are created equal. Now we are engaged in a
+		great civil war, testing whether that nation or any nation so
+		coonceived and so dedicated can long endure.
+			 </textarea>	
+		</div>
+		
+		<table border = "2">
+			<tr>
+				<td><h3>Border Style</h3></td>
+				<td colspan = "2"><h3>Border Size</h3></td>
+			</tr>
+			
+			<tr>
+				
+				<td>
+					<select name = "borderStyle">
+						<option value = "ridge">ridge</option>
+						<option value = "groove">groove</option>
+						<option value = "double">double</option>
+						<option value = "inset">inset</option>
+						<option value = "outset">outset</option>
+					</select>
+				</td>
+				<td>
+					
+					<select size = "5"
+							name = "borderSize">
+						<option value = "1">1</option>
+						<option value = "2">2</option>
+						<option value = "3">3</option>
+						<option value = "4">4</option>
+						<option value = "5">5</option>
+						<option value = "10">10</option>
+					</select>
+				</td>
+				<td>
+					<input type = "radio"
+							name = "sizeType"
+							value = "px"
+							checked = "checked" />pixels<br />
+					<input type = "radio"
+							name = "sizeType"
+							value = "pt" />points<br />
+					<input type = "radio"
+							name = "sizeType"
+							value ="cm" />centimeters<br />
+					<input type = "radio"
+							name = "sizeType"
+							value = "in" />inches<br />
+				</td>
+			</tr>
+		</table>
+		
+		<div>
+			<button type = "submit">
+				show me
+			</button>
+		</div>
+		</form>
+	</body>
+</html>

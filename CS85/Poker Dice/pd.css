@@ -1,0 +1,32 @@
+body {
+  background-color: green;
+  color: tan;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+fieldset {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px solid black;
+}
+.dieImage{
+  float: left;
+  border: 1px solid tan;
+}
+
+.dieImage input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}

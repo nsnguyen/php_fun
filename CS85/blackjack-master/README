@@ -1,0 +1,5 @@
+To run a game, execute blackjack.php
+
+You can override the default number of players by passing an argument
+EX: blackjack.php 5		Launches a game with 5 players + the dealer
+
